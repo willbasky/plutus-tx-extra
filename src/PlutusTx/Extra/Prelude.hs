@@ -39,12 +39,6 @@ init (x:xs) = x : init xs
 last :: [t] -> t
 last = head . reverse
 
-{-# INLINABLE drop #-}
-drop :: Integer -> [a] -> [a]
-drop n xs     | n <= 0 =  xs
-drop _ []              =  []
-drop n (_:xs)          =  drop (subtractInteger n 1) xs
-
 {-# INLINABLE getEvenOdd #-}
 getEvenOdd :: [t] -> ([t], [t])
 getEvenOdd xs = (es, os)

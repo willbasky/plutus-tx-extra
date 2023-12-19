@@ -16,8 +16,6 @@ import           PlutusTx.Builtins
 import           PlutusTx.Prelude                  hiding ((<>))
 import           Prelude                           (Char, String)
 
-import           PlutusTx.Extra.Prelude            (drop)
-
 ----------------- Conversions to BuiltinByteString type --------------------
 
 class ToBuiltinByteString a where
